@@ -36,7 +36,7 @@ html,body{
     @apply max-[900px]:px-[50px];
 }
 .navbar{
-    @apply flex justify-between text-2xl text-[#ffffff] bg-[#FFFFFF17] border border-[#0000000D] backdrop-blur w-full p-12 rounded-[100px];
+    @apply flex justify-between text-2xl text-[#CECECE] bg-[#0000001C] border border-[#0000000D] backdrop-blur w-full p-12 rounded-[100px];
     @apply max-[900px]:text-xl max-[900px]:p-9;
 }
 .positionNavbarMobile{
@@ -44,7 +44,7 @@ html,body{
     @apply fixed z-50 bottom-7 w-full flex justify-center items-center font-hasti px-[10px];
 }
 .navbarMobile{
-    @apply w-full flex items-center justify-between text-2xl text-[#ffffff] bg-[#0000001C] border border-[#0000000D] backdrop-blur px-5 py-3 rounded-[100px];
+    @apply w-full flex items-center justify-between text-2xl text-[#CECECE] bg-[#0000001C] border border-[#0000000D] backdrop-blur px-5 py-3 rounded-[100px];
 }
 .navFingerprint{
     @apply absolute top-0 w-full flex items-start justify-center;
@@ -58,10 +58,10 @@ html,body{
     @apply duration-75;
 }
 .activeLink{
-    @apply text-highBrown;
+    @apply text-[#797979];
 }
 .oneScreen{
-    background-image: url('../public/bg-freez.png') , linear-gradient(#FF6200,#FD7F2C);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#060606,#212121);
     @apply relative flex flex-col h-screen h-[100dvh] snap-start;
     direction: rtl;
 }
@@ -86,18 +86,20 @@ html,body{
 .spaceImageMain{
     @apply absolute h-full w-full flex justify-center items-center;
 }
+.coverContainer{
+    @apply absolute top-[120px] right-[15px] w-[340px] h-[560px] bg-black/20 border border-lowGray/70 rounded-[50px] backdrop-blur-sm;
+}
 .Image{
-    @apply backdrop-blur-sm border bg-black/10 border-[#ababab78] rounded-[70px] h-[550px] w-[430px] object-cover;
-    @apply max-[900px]:w-[400px];
+    @apply z-10 relative w-[410px] mt-20 object-cover;
 }
 .arrowDown{
-    @apply flex justify-center items-center py-2;
+    @apply flex justify-center items-center py-2 z-10;
 }
 .arrowDown img{
     @apply w-10;
 }
 .twoScreen{
-    background-image: url('../public/bg-freez.png') , linear-gradient(#FF8C49,#FE6F17);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#060606,#212121);
     @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen h-[100dvh] snap-start;
     direction: rtl;
     @apply max-[750px]:gap-0 max-[750px]:block;
@@ -112,18 +114,18 @@ html,body{
     @apply h-[280px] opacity-75 max-[600px]:h-[200px] max-[404px]:h-[190px] max-[380px]:h-[180px];
 }
 .nameAbout{
-    @apply font-hasti text-[128px] text-highBrown -mr-14;
+    @apply font-hasti text-[128px] text-highGray -mr-14;
     @apply max-[750px]:text-[90px] max-[600px]:text-[80px] max-[500px]:text-[70px] max-[448px]:text-[60px] max-[404px]:text-[55px] max-[380px]:text-[50px];
 }
 .aboutText{
-    @apply h-fit prCommonTwoScreen font-vazir text-[#060606] text-[28px] border border-white/10 bg-[#0000001C] rounded-[40px] py-2 px-5 backdrop-blur;
+    @apply h-fit prCommonTwoScreen font-vazir text-[#FFFFFF]/90 text-[28px] border border-white/10 bg-[#0000001C] rounded-[40px] py-2 px-5 backdrop-blur;
     @apply max-[750px]:mx-3;
 }
 .thingFrench{
     @apply font-hasti text-[#2C67F2];
 }
 .thirdScreen{
-    background-image: url('../public/bg-freez.png') , linear-gradient(#FF6200,#FD7F2C);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#060606,#212121);
     @apply relative flex flex-col h-screen h-[100dvh] pt-[120px] px-[150px] snap-start;
     direction: rtl;
 }
@@ -138,7 +140,7 @@ html,body{
     @apply w-[200px] h-[200px];
 }
 .connectMe{
-    @apply text-highBrown font-hasti text-[120px] mt-24 -mr-16;
+    @apply text-highGray font-hasti text-[120px] mt-24 -mr-16;
 }
 .socialMediaLinks{
     @apply flex flex-col flex-1 font-hasti items-center justify-center text-[4vw];
@@ -159,15 +161,20 @@ html,body{
     @apply h-full w-full flex justify-center items-center;
 }
 .containerMobileOnceScreen{
-    @apply h-full grid grid-rows-[1fr_3fr_24vw_15vw];
+    @apply h-full grid grid-rows-[45vw_1fr_15vw_100px];
 }
-.topIconRichMobile{
+.topIconJTenMobile{
     @apply w-24 mx-auto mt-5 -mb-10 max-[390px]:-mb-5 max-[390px]:mt-1;
 }
 .ImageMobile{
-    @apply w-[450px] h-full object-cover rounded-[100px] border border-[#711906] max-[465px]:w-[350px] max-[390px]:w-[320px];
+    @apply h-[70vw] z-10 relative;
+    @apply max-[655px]:h-[90vw]
 }
-.signRich{
+.coverContainerMobile{
+    /* @apply top-[10vw] -right-[5vw] ; */
+    @apply absolute w-[55vw] h-[49vw] m-auto bg-black/20 rounded-[50px] backdrop-blur-sm border border-lowGray/70;
+}
+.signJTen{
     @apply max-[750px]:mr-auto max-[750px]:ml-9 max-[750px]:-mt-10 z-10 max-[750px]:relative max-[600px]:-mt-14 max-[750px]:w-[80px] max-[460px]:-mt-20;
 }
 .blob{
@@ -185,7 +192,7 @@ html,body{
     .navbarMobile{
         @apply py-1;
     }
-    .topIconRichMobile{
+    .topIconJTenMobile{
         @apply w-20 pb-[10px] mt-0;
     }
 }
@@ -251,7 +258,7 @@ html,body{
         @apply text-[25px];
         line-height: 50px;
     }
-    .signRich{
+    .signJTen{
         @apply -mt-20;
     }
 }
@@ -260,7 +267,7 @@ html,body{
         @apply text-[22px];
         line-height: 45px;
     }
-    .signRich{
+    .signJTen{
         @apply -mt-14;
     }
 }
@@ -312,7 +319,7 @@ html,body{
     .nameAbout{
         @apply text-[80px]
     }
-    .signRich{
+    .signJTen{
         @apply w-[150px];
     }
 }
@@ -386,7 +393,7 @@ html,body{
     .aboutText{
         line-height: 40px;
     }
-    .signRich{
+    .signJTen{
         @apply -mt-10;
     }
 }
@@ -403,7 +410,7 @@ html,body{
     .aboutText{
         @apply text-[20px];
     }
-    .signRich{
+    .signJTen{
         @apply -mt-16
     }
     .blob{

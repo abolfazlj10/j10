@@ -7,21 +7,24 @@ export default function OnceScreen () {
                 <div className='containerMainContent'>
                     <div className='titleHeading'>
                         <div className="flex flex-col">
-                            <div className="subTitle text-highBrown mr-auto max-[820px]:mr-0 -mb-6">ریچ</div>
-                            <div className="text-lowBrown">امیرحسین</div>
+                            <div className="subTitle text-highGray mr-auto max-[820px]:mr-0 -mb-6">برنامه‌نویس </div>
+                            <div className="text-lowGray">ابوالفضل</div>
                         </div>
                         <div className="flex flex-col">
                             <div className="flex-1 opacity-0 select-none">.</div>
-                            <div className="text-highBrown mr-16">آرمان‌نیا</div>
-                            <div className="subTitle text-lowBrown -mt-5  mr-auto">هویج</div>
+                            <div className="text-highGray mr-16">جمشیدی</div>
+                            <div className="subTitle text-lowGray -mt-5  mr-auto">فرانت‌اند</div>
                         </div>
                     </div>
                     <div className='containerTwoIcon'>
-                        <img className="w-[150px] max-[1330px]:w-[150px]" src='./havij.png'/>
-                        <img className="w-[150px] max-[1330px]:w-[150px]" src='./havij.png'/>
+                        <img className="w-[150px] max-[1330px]:w-[150px] opacity-0 select-none" src='./havij.png'/>
+                        <img className="w-[150px] max-[1330px]:w-[150px] opacity-0 select-none" src='./havij.png'/>
                     </div> 
                     <div className='spaceImageMain'>
-                        <img className='Image' src='./richhavich-bg.png'/>
+                        <div className="relative">
+                            <div className="coverContainer"></div>
+                            <img className='Image' src='./jten.png'/>
+                        </div>
                     </div>            
                 </div>
                 <div className='max-[1330px]:hidden grid-rows-subgrid col-span-1 row-span-3'></div>
@@ -31,16 +34,16 @@ export default function OnceScreen () {
             </div>
             <div className="containerMobileOnceScreen min-[750px]:hidden">
                 <div className="titleMobile">
-                    <img className="topIconRichMobile" src="./havij.png" />
-                    <div className="text-highBrown">امیرحسین</div>
-                    <div className="text-lowBrown">آرمان‌نیا</div>
+                    <div className="text-highGray">ابوالفضل</div>
+                    <div className="text-lowGray">جمشیدی</div>
                 </div>
                 <div className='spaceImageMainMobile'>
-                    <img className='ImageMobile' src='./richhavich-bg.png'/>
+                    <div className="coverContainerMobile"></div>
+                    <img className='ImageMobile' src='./jten.png'/>
                 </div>  
                 <div className="subtextMobile">
-                    <div className="text-highBrown">ریچ</div>
-                    <div className="text-lowBrown">هویج</div>
+                    <div className="text-highGray">برنامه‌نویس </div>
+                    <div className="text-lowGray">فرانت‌اند</div>
                 </div>   
             </div>
         </div>
