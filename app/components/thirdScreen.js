@@ -17,7 +17,7 @@ export default function ThirdScreen () {
                 <div className='text-[#000] blob min-[750px]:-mt-10 min-[750px]:-mr-10 max-[750px]:-mr-5'><a href='http://twitter.com/abolfazl_j10'>ایکس</a></div>
             </div>
             </div>
-            <div className='flex justify-center max-[750px]:hidden'><a href='https://mehdi-arman-s-project.vercel.app/'><img src='./desginer.svg'/></a></div>
+            <div className='flex justify-center max-[750px]:hidden'><a href='https://ma-mu.vercel.app/'><img src='./desginer.svg'/></a></div>
         </div>
     )
 }
