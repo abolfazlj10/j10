@@ -99,7 +99,7 @@ html,body{
     @apply w-10;
 }
 .twoScreen{
-    background-image: url('../public/bg-freez.png') , linear-gradient(#060606,#212121);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#212121,#060606);
     @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen h-[100dvh] snap-start;
     direction: rtl;
     @apply max-[750px]:gap-0 max-[750px]:block;
